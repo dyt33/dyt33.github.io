@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古都西安 - 传统文化之都</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">古都西安</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/attractions.html">风景名胜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/food.html">特色美食</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/culture.html">民风民俗</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/transportation.html">交通路线</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/xian1.jpg" class="d-block w-100" alt="西安城墙">
+                <div class="carousel-caption">
+                    <h2>千年古都</h2>
+                    <p>十三朝古都，历史文化名城</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/xian2.jpg" class="d-block w-100" alt="大雁塔">
+                <div class="carousel-caption">
+                    <h2>大雁塔</h2>
+                    <p>佛教圣地，唐代建筑瑰宝</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/xian3.jpg" class="d-block w-100" alt="兵马俑">
+                <div class="carousel-caption">
+                    <h2>兵马俑</h2>
+                    <p>世界第八大奇迹，秦始皇陵地下军团</p>
+                </div>
+            </div>
+        </div>
+        <!-- 添加控制按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">上一个</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">下一个</span>
+        </button>
+    </div>
+
+    <!-- 主要内容区 -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h3>风景名胜</h3>
+                <p>兵马俑、大雁塔、古城墙等著名景点</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>特色美食</h3>
+                <p>肉夹馍、凉皮、biangbiang面等地道小吃</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-theater-masks"></i>
+                </div>
+                <h3>民风民俗</h3>
+                <p>秦腔、皮影戏等非物质文化遗产</p>
+            </div>
+        </div>
+
+        <!-- 在welcome-section后面添加 -->
+        <section class="introduction-section my-5">
+            <div class="row">
+                <!-- 历史简介 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="intro-card">
+                        <h3 class="section-subtitle"><i class="fas fa-history"></i> 历史沿革</h3>
+                        <div class="intro-content">
+                            <p>西安，古称长安，有着超过3100年的建城史和1100多年的建都史，历史上有周、秦、汉、唐等13个王朝在此建都，是中国历史上建都时间最长、建都朝代最多、影响力最大的都城之一。</p>
+                            <p>是丝绸之路的起点，对中外文化交流起到了重要的桥梁作用；也是中华文明的重要发祥地之一，被誉为"天然历史博物馆"。现在是陕西省省会、副省级市、特大城市、国家中心城市，是西部地区重要的中心城市，国家重要的科研、教育和工业基地。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 地理概况 -->
+                <div class="col-lg-6">
+                    <div class="intro-card">
+                        <h3 class="section-subtitle"><i class="fas fa-map-marked-alt"></i> 地理概况</h3>
+                        <div class="intro-content">
+                            <div class="geo-info">
+                                <p><strong>地理位置：</strong>坐标范围：东经107°40′～109°49′，北纬33°42′～34°45′之间</p>
+                                <p><strong>面积人口：</strong>总面积10752平方公里，常住人口1317万人</p>
+                                <p><strong>行政区划：</strong>下辖11个区（新城区、碑林区、莲湖区、雁塔区、未央区、灞桥区、长安区、临潼区、阎良区、高陵区、鄠邑区）和2个县（蓝田县、周至县）</p>
+                                <p><strong>地形地貌：</strong>位于渭河流域中部，北临渭河和黄土高原，南依秦岭山脉</p>
+                                <p><strong>河流水系：</strong>"八水绕长安"，主要包括渭河、灞河、浐河、潏河、泾河、沣河、涝河、滈河水系</p>
+                                <p><strong>气候特点：</strong>暖温带半湿润大陆性季风气候，四季分明</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 欢迎区块 -->
+        <section class="welcome-section text-center my-5">
+            <h2 class="section-title">欢迎来到西安</h2>
+            <div class="decorative-line"></div>
+            <p class="lead mt-4">这里是丝绸之路的起点，是中华文明的摇篮之一。<br>让我们一起探索这座充满历史韵味的古都。</p>
+            <div class="welcome-video mt-4">
+                <video class="rounded shadow-lg" width="100%" controls>
+                    <source src="videos/西安城市宣传片.mp4" type="video/mp4">
+                    您的浏览器不支持 HTML5 视频。
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="custom-footer">
+        <div class="container">
+            <p>&copy; 丁怡彤. 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

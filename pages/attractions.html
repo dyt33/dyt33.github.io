@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风景名胜 - 古都西安</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">古都西安</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="attractions.html">风景名胜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">特色美食</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">民风民俗</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transportation.html">交通路线</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="page-header text-center py-5 bg-light">
+        <h1 class="section-title">西安风景名胜</h1>
+        <div class="decorative-line"></div>
+    </div>
+
+    <!-- 主要内容区 -->
+    <main class="container my-5">
+        <!-- 搜索和筛选区 -->
+        <div class="search-filter-section mb-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="search-box">
+                        <input type="text" class="form-control" id="searchAttractions" placeholder="搜索景点...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="filter-box d-flex gap-2">
+                        <select class="form-select" id="priceFilter">
+                            <option value="all">价格筛选</option>
+                            <option value="free">免费景点</option>
+                            <option value="0-50">50元以下</option>
+                            <option value="50-100">50-100元</option>
+                            <option value="100+">100元以上</option>
+                        </select>
+                        <select class="form-select" id="timeFilter">
+                            <option value="all">开放时间</option>
+                            <option value="morning">上午开放</option>
+                            <option value="afternoon">下午开放</option>
+                            <option value="night">夜间开放</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="attractions-nav mb-4">
+            <ul class="nav nav-pills justify-content-center" id="attractionsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#historical" type="button">历史古迹</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#museums" type="button">博物馆</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#parks" type="button">公园景区</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#mountains" type="button">爬山景区</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 分类内容 -->
+        <div class="tab-content" id="attractionsTabContent">
+            <!-- 历史古迹 -->
+            <div class="tab-pane fade show active" id="historical">
+                <div class="row g-4">
+                    <!-- 兵马俑 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/兵马俑.jpg" class="img-fluid rounded" alt="兵马俑">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>兵马俑</h3>
+                                        <p class="mb-4">世界第八大奇迹，被誉为"世界上最大的地下军事博物馆"。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：临潼区秦始皇陵东1.5公里处</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:30-17:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：150元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 大雁塔 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/大雁塔.jpg" class="img-fluid rounded" alt="大雁塔">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>大雁塔</h3>
+                                        <p class="mb-4">中国现存最早、规模最大的唐代四方楼阁式砖塔。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：长安区大雁塔南广场</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：50元（不含登塔费）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 小雁塔 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/小雁塔.jpg" class="img-fluid rounded" alt="小雁塔">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>小雁塔</h3>
+                                        <p class="mb-4">与大雁塔齐名的另一座重要佛塔，以其精美的建筑艺术和悠久的历史而著称。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：碑林区友谊西路小雁塔公园内</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:30</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：30元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 西安城墙 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/西安城墙.jpg" class="img-fluid rounded" alt="西安城墙">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>西安城墙</h3>
+                                        <p class="mb-4">中国现存最完整的一座古代城垣建筑，全长约13.7公里，可以骑行游览。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：环绕西安市老城区</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-22:00（旺季）</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：54元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 钟楼 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/钟楼.jpg" class="img-fluid rounded" alt="钟楼">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>钟楼</h3>
+                                        <p class="mb-4">西安的标志性建筑之一，是中国古代遗留下来的最大、最完整的钟楼。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：碑林区钟楼盘道</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:30-21:30</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：30元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鼓楼 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/鼓楼.jpg" class="img-fluid rounded" alt="鼓楼">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>鼓楼</h3>
+                                        <p class="mb-4">与钟楼遥相呼应，是中国古代用于报时的重要设施。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：莲湖区西大街鼓楼巷</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:30-22:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：30元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 大唐芙蓉园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/大唐芙蓉园.jpg" class="img-fluid rounded" alt="大唐芙蓉园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>大唐芙蓉园</h3>
+                                        <p class="mb-4">以唐代皇家园林为蓝本，重现了唐朝时期的园林风貌，是一个集文化、娱乐、休闲于一体的大型主题公园。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：曲江新区芙蓉西路99号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-22:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：120元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 华清池 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/华清池.jpg" class="img-fluid rounded" alt="华清池">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>华清池</h3>
+                                        <p class="mb-4">中国古代著名的皇家园林，因唐玄宗与杨贵妃的爱情故事而闻名。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：临潼区骊山脚下</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：7:30-18:30</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：120元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 大明宫国家遗址公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/大明宫国家遗址公园.jpg" class="img-fluid rounded" alt="大明宫国家遗址公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>大明宫国家遗址公园</h3>
+                                        <p class="mb-4">曾经是唐朝最宏伟的宫殿之一，现在作为遗址公园对外开放，展示了唐代宫廷建筑的壮观和辉煌。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：未央区自强东路585号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-18:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：60元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 曲江池遗址公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/曲江池遗址公园.jpg" class="img-fluid rounded" alt="曲江池遗址公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>曲江池遗址公园</h3>
+                                        <p class="mb-4">基于唐代曲江池的历史背景重建，是一个集文化体验、休闲娱乐为一体的大型公共空间。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：雁塔区曲江池南路9号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-21:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 汉城湖公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/汉城湖公园.jpg" class="img-fluid rounded" alt="汉城湖公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>汉城湖公园</h3>
+                                        <p class="mb-4">位于汉长安城遗址上，是一个大型的人工湖景区，结合了历史文化与现代园林设计。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：未央区凤城二路与朱宏路交汇处</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：全天开放</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 博物馆 -->
+            <div class="tab-pane fade" id="museums">
+                <div class="row">
+                    <!-- 陕西历史博物馆 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/陕西历史博物馆.jpg" class="img-fluid rounded" alt="陕西历史博物馆">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>陕西历史博物馆</h3>
+                                        <p class="mb-4">中国第一座大型现代化国家博物馆。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：雁塔区小寨东路91号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:00（周一闭馆）</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费（需预约）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 碑林博物馆 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/碑林博物馆.jpg" class="img-fluid rounded" alt="碑林博物馆">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>碑林博物馆</h3>
+                                        <p class="mb-4">以收藏、研究和展示历代碑刻、墓志及石刻艺术而闻名，是中国保存古代碑石最多的艺术宝库。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：碑林区三学街15号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-18:00（周一闭馆）</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：75元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 西安事变纪念馆 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/西安事变纪念馆.jpg" class="img-fluid rounded" alt="西安事变纪念馆">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>西安事变纪念馆</h3>
+                                        <p class="mb-4">原名张学良公馆，是1936年西安事变的发生地，对于了解中国近现代史具有重要意义。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：碑林区建国路69号</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:00（周一闭馆）</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 半坡博物馆 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/半坡博物馆.jpg" class="img-fluid rounded" alt="半坡博物馆">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>半坡博物馆</h3>
+                                        <p class="mb-4">展示了新石器时代仰韶文化的遗址，是了解中国早期文明发展的重要窗口。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：灞桥区半坡村</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:00（周一闭馆）</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：40元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 续添加其他博物馆... -->
+                </div>
+            </div>
+
+            <!-- 公园景区 -->
+            <div class="tab-pane fade" id="parks">
+                <div class="row">
+                    <!-- 秦岭野生动物园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/秦岭野生动物园.jpg" class="img-fluid rounded" alt="秦岭野生动物园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>秦岭野生动物园</h3>
+                                        <p class="mb-4">中国西北地区最大的野生动物园，拥有丰富的动物种类。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：周至县楼观台</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：120元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 秦岭国家植物园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/秦岭国家植物园.jpg" class="img-fluid rounded" alt="秦岭国家植物园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>秦岭国家植物园</h3>
+                                        <p class="mb-4">位于秦岭山脉中段，是中国最大的植物园之一，拥有丰富的生物多样性，适合自然爱好者和家庭出游。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：周至县楼观台</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-18:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：旺季50元，淡季40元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 西安植物园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/西安植物园.jpg" class="img-fluid rounded" alt="西安植物园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>西安植物园</h3>
+                                        <p class="mb-4">一个集科研、科普教育、旅游休闲为一体的综合性植物园，四季都有不同的花卉盛开，是放松心情的好地方。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：雁塔区雁翔路与南三环交汇处</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:30-18:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：旺季40元，淡季25元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 西安世博园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/西安世博园.jpg" class="img-fluid rounded" alt="西安世博园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>西安世博园</h3>
+                                        <p class="mb-4">2011年世界园艺博览会的举办地，现已成为一个大型的城市公园，园内有众多国际内的园艺景观。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：浐灞生态区广运潭大道</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：9:00-17:30</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：旺季60元，淡季40元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 兴庆公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/兴庆公园.jpg" class="img-fluid rounded" alt="兴庆公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>兴庆公园</h3>
+                                        <p class="mb-4">西安市区最大的综合性公园，园内有湖泊、亭台楼阁，是市民休闲娱乐的好去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：碑林区兴庆路</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：6:00-22:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 昆明池七夕公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/昆明池七夕公园.jpg" class="img-fluid rounded" alt="昆明池七夕公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>昆明池七夕公园</h3>
+                                        <p class="mb-4">位于西安市未央区，是以唐代昆明池遗址为基础建设的大型生态文化公园，是市民休闲娱乐的好去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：未央区未央路与凤城八路十字</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：6:00-22:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：免费</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 爬山景区 -->
+            <div class="tab-pane fade" id="mountains">
+                <div class="row">
+                    <!-- 终南山 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/终南山.jpg" class="img-fluid rounded" alt="终南山">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>终南山</h3>
+                                        <p class="mb-4">道教圣地，自然风景优美，有众多历史遗迹和道观，是登山、避暑的理想去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：长安区终南山</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：全天开放</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：各景区收费不同</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 翠华山 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/翠华山.jpg" class="img-fluid rounded" alt="翠华山">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>翠华山</h3>
+                                        <p class="mb-4">秦岭山脉中的著名景区，以其独特的地质地貌和丰富的植被闻名，是登山爱好者的理想去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：西安市周至县</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-17:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：60元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 朱雀国家森林公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/朱雀国家森林公园.jpg" class="img-fluid rounded" alt="朱雀国家森林公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>朱雀国家森林公园</h3>
+                                        <p class="mb-4">位于秦岭北麓，森林覆盖率高，空气清新，是登山健身、休闲度假的好去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：长安区朱雀大道</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-17:30</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：40元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 太平国家森林公园 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/太平国家森林公园.jpg" class="img-fluid rounded" alt="太平国家森林公园">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>太平国家森林公园</h3>
+                                        <p class="mb-4">秦岭山脉中的生态公园，植被丰富，景色优美，适合徒步和野外探险。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：长安区太平镇</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：8:00-17:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：45元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 骊山 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/骊山.jpg" class="img-fluid rounded" alt="骊山">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>骊山</h3>
+                                        <p class="mb-4">华清池所在的骊山也是著名的风景名胜区，除了温泉之外，还可以游览老君殿、烽火台等历史遗迹。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：西安市临潼区</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：7:00-19:00</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：包含在华清池门票中</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 王顺山 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="attraction-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="attraction-image">
+                                        <img src="../images/王顺山.jpg" class="img-fluid rounded" alt="王顺山">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="attraction-content">
+                                        <h3>王顺山</h3>
+                                        <p class="mb-4">秦岭山脉中的一座名山，风景秀丽，适合登山和观光，是周末休闲的好去处。</p>
+                                        <div class="attraction-info">
+                                            <p><i class="fas fa-map-marker-alt"></i> 位置：长安区王顺镇</p>
+                                            <p><i class="fas fa-clock"></i> 开放时间：全天开放</p>
+                                            <p><i class="fas fa-ticket-alt"></i> 门票：30元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="custom-footer">
+        <div class="container">
+            <p>&copy; 丁怡彤. 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/attractions.js"></script>
+</body>
+</html> 

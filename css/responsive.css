@@ -1,0 +1,138 @@
+/* 平板设备 */
+@media (max-width: 991.98px) {
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .feature-box {
+        margin-bottom: 2rem;
+    }
+    
+    .feature-icon {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .intro-card {
+        margin-bottom: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    /* 联系表单响应式调整 */
+    .contact-form-card {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-info-card {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-list li {
+        margin-bottom: 1rem;
+    }
+    
+    /* 地图容器高度调整 */
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* 手机设备 */
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .feature-box {
+        margin-bottom: 1.5rem;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .feature-icon {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-section::before,
+    .welcome-section::after {
+        width: 30px;
+    }
+    
+    .intro-card {
+        padding: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .geo-info p {
+        padding-left: 0.5rem;
+    }
+    
+    /* 联系表单响应式调整 */
+    .contact-form-card,
+    .contact-info-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-list i {
+        font-size: 1.2rem;
+    }
+    
+    .contact-list h4 {
+        font-size: 1rem;
+    }
+    
+    /* 地图容器高度调整 */
+    .map-container {
+        height: 250px;
+    }
+    
+    /* 表单按钮调整 */
+    .contact-form .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* 小屏幕手机优化 */
+@media (max-width: 575.98px) {
+    .carousel-caption {
+        padding: 15px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-box {
+        padding: 1.5rem;
+    }
+    
+    .contact-form-card h3,
+    .contact-info-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .map-section h3 {
+        font-size: 1.5rem;
+    }
+} 
